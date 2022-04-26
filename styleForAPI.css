@@ -1,0 +1,32 @@
+section.facts{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+
+section.facts div{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+section.facts h1{
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size:large;
+}
+
+section.facts p{
+    font-size: medium;
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    margin: 18px 0;
+}
+
+section div.spotify{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}

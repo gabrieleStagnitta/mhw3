@@ -1,0 +1,84 @@
+div img {
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+
+section.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+section.choice-grid div{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 32.5%;
+    border: solid #dcdcdc 1px;
+    background-color: #f4f4f4;
+}
+
+section.choice-grid div.selected{
+    background-color: #cfe3ff;
+}
+
+section.choice-grid div.unselected{
+    opacity: 0.60;
+}
+
+section.choice-grid div img.checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+section.answerSection{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+section.hiddenSection{
+    visibility: hidden;
+    content: none;
+}
+
+div.answerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #cecece;
+}
+
+div.answerButton:hover {background-color: #e0e0e0}
+
+
+div h1.answerH1{
+    margin-bottom: 18px;
+}
+div p.answerP{
+    margin-bottom: 18px;
+}
+
+@media (max-width: 750px) {
+    header div{
+        visibility: hidden;
+    }
+    body{
+        width:95%;
+    }
+}
+
+@media(max-width: 500px){
+    section.choice-grid div{
+        width: 49%;
+    }
+}
